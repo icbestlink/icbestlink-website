@@ -144,15 +144,15 @@ communication.`,
 					label: 'PABX Components',
 					icon: 'pabx.svg',
 					products: [
-						{ src: '/Alcatel.png', alt: 'Alcatel' },
-						{ src: '/Audiocodes.png', alt: 'Audiocodes' },
-						{ src: '/Avaya.png', alt: 'Avaya' },
-						{ src: '/Fanvil.png', alt: 'Fanvil' },
-						{ src: '/Grandstream.png', alt: 'Grandstream' },
 						{ src: '/Mitel.png', alt: 'Mitel' },
+						{ src: '/Avaya.png', alt: 'Avaya' },
+						{ src: '/Grandstream.png', alt: 'Grandstream' },
+						{ src: '/Audiocodes.png', alt: 'Audiocodes' },
+						{ src: '/Fanvil.png', alt: 'Fanvil' },
+						{ src: '/Unify.png', alt: 'Unify' },
 						{ src: '/Nec.png', alt: 'Nec' },
 						{ src: '/Teltrac.webp', alt: 'Teltrac' },
-						{ src: '/Unify.png', alt: 'Unify' }
+						{ src: '/Alcatel.png', alt: 'Alcatel' }
 					]
 				},
 				{
@@ -227,12 +227,12 @@ Together, they enhance safety and help deter unauthorized access.`,
 					label: 'CCTV',
 					icon: 'cctv.svg',
 					products: [
+						{ src: 'LevelOne.png', alt: 'LevelOne' },
+						{ src: 'Hikvision.png', alt: 'Hikvision' },
 						{ src: 'Avigilon.png', alt: 'Avigilon' },
 						{ src: 'Axis Communication.png', alt: 'Axis Communication' },
 						{ src: 'Dahua.png', alt: 'Dahua' },
 						{ src: 'Hanhwa Vision.png', alt: 'Hanhwa Vision' },
-						{ src: 'Hikvision.png', alt: 'Hikvision' },
-						{ src: 'LevelOne.png', alt: 'LevelOne' },
 						{ src: 'Lilin.png', alt: 'Lilin' }
 					]
 				},
@@ -364,23 +364,30 @@ processes, support customer service, and help monitor performance.`,
 						? 'lg:grid-cols-2'
 						: ''}  gap-3 lg:gap-4"
 				>
-					{#each productsSub as { label, products }}
-						<div class="bg-gray-50/65 py-2 px-4 rounded-lg shadow-md">
-							<h3 class="text-xl font-bold text-[#0a0e30] mb-4">{label}</h3>
-							<div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-4">
-								{#each products as product}
-									<div
-										class="min-w-[109px] min-h-[109px] flex items-center justify-center brand-card bg-white/50 shadow-[0px_3px_17px_-2px_rgba(0,_0,_0,_0.25)] rounded-lg p-4 transition-all duration-200 group"
-									>
-										<img
-											class="w-[125px] h-auto"
-											src={product.src}
-											alt={product.alt}
-											width="300"
-											height="300"
-										/>
-									</div>
-								{/each}
+					{#if productsSub.length > 1}
+						<div
+							class="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-red-400/35 z-10"
+						></div>
+					{/if}
+					{#each productsSub as { label, products }, i}
+						<div class="relative">
+							<div class="bg-gray-50/65 py-2 px-4 rounded-lg shadow-lg">
+								<h3 class="text-xl font-bold text-[#0a0e30] mb-4 text-center">{label}</h3>
+								<div class="grid grid-cols-2 md:grid-cols-2 gap-4 mb-4">
+									{#each products as product}
+										<div
+											class="min-w-[109px] min-h-[109px] flex items-center justify-center brand-card bg-white/50 shadow-[0px_3px_17px_-2px_rgba(0,_0,_0,_0.25)] rounded-lg p-4 transition-all duration-200 group"
+										>
+											<img
+												class="w-[150px] h-auto"
+												src={product.src}
+												alt={product.alt}
+												width="350"
+												height="350"
+											/>
+										</div>
+									{/each}
+								</div>
 							</div>
 						</div>
 					{/each}

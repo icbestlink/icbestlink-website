@@ -12,8 +12,11 @@
 
 	let thankyou = $state(false);
 
+	let loading = $state(false);
+
 	// Form submission handler
 	const handleSubmit = async (event) => {
+		loading = true;
 		event.preventDefault(); // Prevent default form submission
 
 		// Send form data to your backend endpoint
@@ -29,6 +32,7 @@
 
 		if (response.ok) {
 			thankyou = true;
+			loading = false;
 		} else {
 			alert(`Error: ${result.message}`);
 		}
@@ -305,10 +309,15 @@
 					</div>
 					<div class="flex justify-end w-full px-3">
 						<button
-							class="shadow bg-[#0a0e30] hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition-all duration-500 ease-in-out cursor-pointer"
+							class="shadow bg-[#0a0e30] disabled:bg-gray-500/75 disabled:cursor-not-allowed hover:bg-indigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-6 rounded transition-all duration-500 ease-in-out cursor-pointer"
 							type="submit"
+							disabled={loading}
 						>
-							Send Message
+							{#if loading}
+								Submitting...
+							{:else}
+								Submit
+							{/if}
 						</button>
 					</div>
 				</div>
