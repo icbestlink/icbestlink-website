@@ -1,6 +1,6 @@
 
 export const GET = async () => {
-    const baseUrl = 'https://icbestlink-website.vercel.app';
+    const baseUrl = 'https://www.icbestlink.com/';
   
     // Define your static pages here
     const pages = [
