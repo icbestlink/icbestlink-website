@@ -55,7 +55,9 @@
 				</li>
 			{/each}
 			<li>
-				<a class="item bg-[#0a0e30] call-now" href="/icbldialer3.html">Click to Call</a>
+				<a class="item bg-[#0a0e30] call-now" href="https://icbestlink.com/icbldialer3.html"
+					>Click to Call</a
+				>
 			</li>
 		</ul>
 	</nav>

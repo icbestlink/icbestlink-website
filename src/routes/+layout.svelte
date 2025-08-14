@@ -12,7 +12,7 @@
 	const stuff = {
 		title: `IC-Best Link Telecom Corporation | Enterprise ICT Solutions`,
 		desc: `A trusted Filipino ICT provider delivering unified communication systems, networking, and robust end-to-end solutions as well as quality products & services.`,
-		image: `https://www.icbestlink.com/featured-image.png`
+		image: `https://app.icbestlink.com/featured-image.png`
 	};
 
 	let url = $derived(page.url);
@@ -26,7 +26,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content={stuff?.title} />
 	<meta property="og:description" content={stuff?.desc} />
-	<meta property="og:url" content="https://www.icbestlink.com/" />
+	<meta property="og:url" content="https://icbestlink.com/" />
 	<meta property="og:site_name" content="IC-Best Link Telecom Corporation" />
 	<meta property="og:image" content={stuff?.image} />
 	<meta property="og:image:width" content="800" />
