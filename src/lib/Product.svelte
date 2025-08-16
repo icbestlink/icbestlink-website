@@ -1,39 +1,67 @@
 <script>
 	let productCategories = [
 		{
-			category: 'Power & Backup Systems',
-			icon: 'battery.svg',
-			excerpt: `These systems keep your operations running even during power outages or electrical
-disturbances. UPS units and batteries provide temporary power and protect
-sensitive equipment from surges, helping prevent data loss and system damage`,
+			category: 'Communication Systems',
+			icon: 'hotline.svg',
+			excerpt: `Communication systems enable voice and message-based interaction within and
+outside the organization. This includes PABX systems for telephony, paging/audiovisual systems for announcements, and emergency hotlines for urgent
+communication.`,
 			productsSub: [
 				{
-					label: 'Battery',
-					icon: 'battery.svg',
+					label: 'PABX Components',
+					icon: 'pabx.svg',
 					products: [
-						{ src: 'Maxell.png', alt: 'Maxell' },
-						{ src: 'Yuasa.png', alt: 'Yuasa' }
+						{ src: '/Mitel.png', alt: 'Mitel' },
+						{ src: '/Avaya.png', alt: 'Avaya' },
+						{ src: '/Grandstream.png', alt: 'Grandstream' },
+						{ src: '/Audiocodes.png', alt: 'Audiocodes' },
+						{ src: '/Fanvil.png', alt: 'Fanvil' },
+						{ src: '/Unify.png', alt: 'Unify' },
+						{ src: '/Nec.png', alt: 'Nec' },
+						{ src: '/Teltrac.webp', alt: 'Teltrac' },
+						{ src: '/Alcatel.png', alt: 'Alcatel' }
 					]
 				},
 				{
-					label: 'UPS',
-					icon: 'ups.svg',
-
+					label: 'Paging/Audio-Visual System',
+					icon: 'audiovisual.svg',
 					products: [
-						{ src: '/Accupower.png', alt: 'Accupower' },
-						{ src: '/APC.png', alt: 'APC' },
-						{
-							src: '/Business Partner Enterprise.png',
-							alt: 'Business Partner Enterprise'
-						},
-						{ src: '/Delta.png', alt: 'Delta' },
-						{ src: '/Eaton.png', alt: 'Eaton' },
-						{ src: '/Socomec.png', alt: 'Socomec' },
-						{ src: '/Vertiv.png', alt: 'Vertiv' }
+						{ src: '/Bosch.png', alt: 'Bosch' },
+						{ src: '/Hochiki.png', alt: 'Hochiki' },
+						{ src: '/Honeywell.png', alt: 'Honeywell' },
+						{ src: '/Jabra.png', alt: 'Jabra' },
+						{ src: '/Kiddie.png', alt: 'Kiddie' },
+						{ src: '/Saramonic.png', alt: 'Saramonic' },
+						{ src: '/Televic.png', alt: 'Televic' },
+						{ src: '/TOA.png', alt: 'TOA' }
+					]
+				},
+				{
+					label: 'Emergency Hotline',
+					icon: 'hotline.svg',
+					products: [{ src: '911.png', alt: '911' }]
+				},
+				{
+					label: 'Nurse Call',
+					icon: 'hotline.svg',
+					products: [
+						{ src: 'AIPHONE.png', alt: 'AIPHONE' },
+						{ src: 'FORTH.png', alt: 'FORTH' },
+						{ src: 'MEEYI.png', alt: 'MEEYI' },
+						{ src: 'TOA.png', alt: 'TOA' }
+					]
+				},
+				{
+					label: 'Call Accounting',
+					icon: 'hotline.svg',
+					products: [
+						{ src: 'Teltrac.webp', alt: 'Teltrac' },
+						{ src: 'CallTrack.png', alt: 'Call Track' }
 					]
 				}
 			]
 		},
+
 		{
 			category: 'Networking & IT Infrastructure',
 			icon: 'cabling.svg',
@@ -133,89 +161,7 @@ organization.`,
 				}
 			]
 		},
-		{
-			category: 'Communication Systems',
-			icon: 'hotline.svg',
-			excerpt: `Communication systems enable voice and message-based interaction within and
-outside the organization. This includes PABX systems for telephony, paging/audiovisual systems for announcements, and emergency hotlines for urgent
-communication.`,
-			productsSub: [
-				{
-					label: 'PABX Components',
-					icon: 'pabx.svg',
-					products: [
-						{ src: '/Mitel.png', alt: 'Mitel' },
-						{ src: '/Avaya.png', alt: 'Avaya' },
-						{ src: '/Grandstream.png', alt: 'Grandstream' },
-						{ src: '/Audiocodes.png', alt: 'Audiocodes' },
-						{ src: '/Fanvil.png', alt: 'Fanvil' },
-						{ src: '/Unify.png', alt: 'Unify' },
-						{ src: '/Nec.png', alt: 'Nec' },
-						{ src: '/Teltrac.webp', alt: 'Teltrac' },
-						{ src: '/Alcatel.png', alt: 'Alcatel' }
-					]
-				},
-				{
-					label: 'Paging/Audio-Visual System',
-					icon: 'audiovisual.svg',
-					products: [
-						{ src: '/Bosch.png', alt: 'Bosch' },
-						{ src: '/Hochiki.png', alt: 'Hochiki' },
-						{ src: '/Honeywell.png', alt: 'Honeywell' },
-						{ src: '/Jabra.png', alt: 'Jabra' },
-						{ src: '/Kiddie.png', alt: 'Kiddie' },
-						{ src: '/Saramonic.png', alt: 'Saramonic' },
-						{ src: '/Televic.png', alt: 'Televic' },
-						{ src: '/TOA.png', alt: 'TOA' }
-					]
-				},
-				{
-					label: 'Emergency Hotline',
-					icon: 'hotline.svg',
-					products: [{ src: '911.png', alt: '911' }]
-				},
-				{
-					label: 'Nurse Call',
-					icon: 'hotline.svg',
-					products: [
-						{ src: 'AIPHONE.png', alt: 'AIPHONE' },
-						{ src: 'FORTH.png', alt: 'FORTH' },
-						{ src: 'MEEYI.png', alt: 'MEEYI' },
-						{ src: 'TOA.png', alt: 'TOA' }
-					]
-				},
-				{
-					label: 'Call Accounting',
-					icon: 'hotline.svg',
-					products: [
-						{ src: 'Teltrac.webp', alt: 'Teltrac' },
-						{ src: 'CallTrack.png', alt: 'Call Track' }
-					]
-				}
-			]
-		},
-		{
-			category: 'Peripheral Devices',
-			icon: 'printer.svg',
-			excerpt: `Peripheral devices are the supporting tools that help staff perform daily tasks. These
-include printers, scanners, monitors, and other accessories. While not core
-infrastructure, they are essential for productivity, documentation, and workflow
-efficiency.`,
-			productsSub: [
-				{
-					label: 'Printer',
-					icon: 'printer.svg',
 
-					products: [
-						{ src: '/Brother.png', alt: 'Brother' },
-						{ src: '/Canon.png', alt: 'Canon' },
-						{ src: '/Epson.png', alt: 'Epson' },
-						{ src: '/Lexmark.png', alt: 'Lexmark' },
-						{ src: '/Printronix.png', alt: 'Printronix' }
-					]
-				}
-			]
-		},
 		{
 			category: 'Security & Surveillance',
 			icon: 'cctv.svg',
@@ -248,6 +194,7 @@ Together, they enhance safety and help deter unauthorized access.`,
 				}
 			]
 		},
+
 		{
 			category: 'Safety Systems',
 			icon: 'fire.svg',
@@ -266,6 +213,28 @@ responders automatically.`,
 						{ src: 'Hochiki.png', alt: 'Hochiki' },
 						{ src: 'Honeywell.png', alt: 'Honeywell' },
 						{ src: 'Kiddie.png', alt: 'Kiddie' }
+					]
+				}
+			]
+		},
+		{
+			category: 'Peripheral Devices',
+			icon: 'printer.svg',
+			excerpt: `Peripheral devices are the supporting tools that help staff perform daily tasks. These
+include printers, scanners, monitors, and other accessories. While not core
+infrastructure, they are essential for productivity, documentation, and workflow
+efficiency.`,
+			productsSub: [
+				{
+					label: 'Printer',
+					icon: 'printer.svg',
+
+					products: [
+						{ src: '/Brother.png', alt: 'Brother' },
+						{ src: '/Canon.png', alt: 'Canon' },
+						{ src: '/Epson.png', alt: 'Epson' },
+						{ src: '/Lexmark.png', alt: 'Lexmark' },
+						{ src: '/Printronix.png', alt: 'Printronix' }
 					]
 				}
 			]
@@ -294,6 +263,40 @@ processes, support customer service, and help monitor performance.`,
 						{ src: '/Sophos.png', alt: 'Sophos' },
 						{ src: '/Veeam.png', alt: 'Veeam' },
 						{ src: '/Veritas.png', alt: 'Veritas' }
+					]
+				}
+			]
+		},
+		{
+			category: 'Power & Backup Systems',
+			icon: 'battery.svg',
+			excerpt: `These systems keep your operations running even during power outages or electrical
+disturbances. UPS units and batteries provide temporary power and protect
+sensitive equipment from surges, helping prevent data loss and system damage`,
+			productsSub: [
+				{
+					label: 'Battery',
+					icon: 'battery.svg',
+					products: [
+						{ src: 'Maxell.png', alt: 'Maxell' },
+						{ src: 'Yuasa.png', alt: 'Yuasa' }
+					]
+				},
+				{
+					label: 'UPS',
+					icon: 'ups.svg',
+
+					products: [
+						{ src: '/Accupower.png', alt: 'Accupower' },
+						{ src: '/APC.png', alt: 'APC' },
+						{
+							src: '/Business Partner Enterprise.png',
+							alt: 'Business Partner Enterprise'
+						},
+						{ src: '/Delta.png', alt: 'Delta' },
+						{ src: '/Eaton.png', alt: 'Eaton' },
+						{ src: '/Socomec.png', alt: 'Socomec' },
+						{ src: '/Vertiv.png', alt: 'Vertiv' }
 					]
 				}
 			]
