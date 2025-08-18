@@ -310,7 +310,6 @@ sensitive equipment from surges, helping prevent data loss and system damage`,
 
 		const lightness = 60 + Math.random() * 30 + index;
 
-		// Return color in HSL format
 		return `hsl(${hue}, ${saturation}%, ${lightness}%)`;
 	}
 </script>
