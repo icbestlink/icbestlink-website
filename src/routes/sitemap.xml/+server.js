@@ -1,6 +1,6 @@
 
 export const GET = async () => {
-    const baseUrl = 'https://www.icbestlink.com/';
+    const baseUrl = 'https://app.icbestlink.com/';
   
     // Define your static pages here
     const pages = [
