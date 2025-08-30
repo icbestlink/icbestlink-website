@@ -51,6 +51,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>IC-Best Link Telecom Corporation | Contact Us</title>
+	<meta
+		name="description"
+		content="IC-Best Link Telecom Corporation Contacts: Get In Touch · UG 7 Cityland 8 Condominium No. 98 Sen Gil Puyat Avenue Makati City · 0917-899-9031 · (02) 8812 – 5965 · cs@icbestlink.com."
+	/>
+</svelte:head>
+
 <div class="max-w-screen-lg mx-auto p-5 pb-20">
 	<div
 		class="grid grid-cols-1 md:grid-cols-12 shadow-[0px_-1px_17px_-2px_rgba(0,_0,_0,_0.35)] rounded-2xl bg-white overflow-hidden"

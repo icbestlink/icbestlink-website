@@ -314,6 +314,14 @@ sensitive equipment from surges, helping prevent data loss and system damage`,
 	}
 </script>
 
+<svelte:head>
+	<title>IC-Best Link Telecom Corporation | Products We Offer</title>
+	<meta
+		name="description"
+		content="These includes PABX components, PC/laptops & servers, storage solutions, printers, projectors, batteries, network components, paging & audio-visual systems, etc."
+	/>
+</svelte:head>
+
 <section class="mx-auto lg:max-w-7xl pb-10 px-4 xl:px-0 md:pb-20">
 	<div class="text-center mb-12">
 		<h2 class="text-4xl font-bold text-[#0a0e30] mb-4">Our Products</h2>

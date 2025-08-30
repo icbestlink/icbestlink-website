@@ -84,6 +84,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>IC-Best Link Telecom Corporation | Services</title>
+	<meta
+		name="description"
+		content="From reliable network solutions to scalable ICT support, IC-Best Link Telecom Corporation expert services are designed to help businesses stay connected, competitive, and future-ready."
+	/>
+</svelte:head>
+
 <section class="px-4 pb-10 md:pb-20 mx-auto lg:max-w-7xl" id="services">
 	<header class="py-4 text-center">
 		<h2 class="text-4xl font-bold text-[#0a0e30] mb-4">OUR SERVICES</h2>

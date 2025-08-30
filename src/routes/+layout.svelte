@@ -10,7 +10,7 @@
 	let route = $derived(page.route.id);
 
 	const stuff = {
-		title: `IC-Best Link Telecom Corporation | Enterprise ICT Solutions`,
+		title: `IC-Best Link Telecom Corporation`,
 		desc: `A trusted Filipino ICT provider delivering unified communication systems, networking, and robust end-to-end solutions as well as quality products & services.`,
 		image: `https://app.icbestlink.com/featured-image.png`
 	};

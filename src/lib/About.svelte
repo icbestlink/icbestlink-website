@@ -25,6 +25,14 @@ deployment of Real-time communications today and beyond.`
 	];
 </script>
 
+<svelte:head>
+	<title>IC-Best Link Telecom Corporation | About Us</title>
+	<meta
+		name="description"
+		content="IC-Best Link Telecom Corporation is a trusted Filipino ICT provider delivering unified communication systems, networking, and robust end-to-end solutions as well as quality products."
+	/>
+</svelte:head>
+
 <section class="px-4 pb-10 md:pb-20 mx-auto lg:max-w-7xl">
 	<div class="text-center mb-12">
 		<h2 class="text-4xl font-bold text-[#0a0e30] mb-4">Who We Are?</h2>
